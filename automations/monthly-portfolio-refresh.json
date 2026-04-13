@@ -1,0 +1,113 @@
+{
+  "version": "2",
+  "flowTitle": "Monthly Portfolio Refresh",
+  "trigger": {
+    "valid": false,
+    "displayName": "Monthly Schedule",
+    "type": "PIECE_TRIGGER",
+    "settings": {
+      "pieceName": "@taskade/automade-internalpiece-schedule",
+      "pieceVersion": "1.0.0",
+      "triggerName": "schedule.monthly",
+      "input": {}
+    }
+  },
+  "actions": [
+    {
+      "name": "4af64680-fd7f-4928-bb87-1f5c2de395b5",
+      "valid": false,
+      "displayName": "Generate Refresh Brief",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-openai",
+        "pieceVersion": "1.0.0",
+        "actionName": "agent.ask",
+        "input": {
+          "input": "Create a monthly portfolio refresh summary and list the next 3 highest-impact improvements. Include concise rationale for each. Trigger time: {{ trigger[\"triggerTime\"] }}",
+          "agentId": {
+            "type": "flow-template-variable-input-type",
+            "id": "01KNXYQHKSTME5EX3A1ZYPJAZX"
+          },
+          "outputType": "plaintext"
+        }
+      }
+    },
+    {
+      "name": "f9eb4cea-9c8a-4f16-8a07-f9ff8dd5b986",
+      "valid": false,
+      "displayName": "Save Monthly Summary",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "1.0.0",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@pFea1": {
+              "data": {
+                "value": "no"
+              },
+              "rank": "5",
+              "fieldId": "@pFea1"
+            },
+            "@pImp1": {
+              "data": {
+                "value": "{{ 4af64680-fd7f-4928-bb87-1f5c2de395b5[\"result\"] }}"
+              },
+              "rank": "4",
+              "fieldId": "@pImp1"
+            },
+            "@pSta1": {
+              "data": {
+                "value": "draft"
+              },
+              "rank": "1",
+              "fieldId": "@pSta1"
+            },
+            "@pTec1": {
+              "data": {
+                "value": "Automation: Monthly Portfolio Refresh"
+              },
+              "rank": "2",
+              "fieldId": "@pTec1"
+            },
+            "@pTyp1": {
+              "data": {
+                "value": "saas"
+              },
+              "rank": "0",
+              "fieldId": "@pTyp1"
+            },
+            "@pUrl1": {
+              "data": {
+                "value": "N/A"
+              },
+              "rank": "3",
+              "fieldId": "@pUrl1"
+            }
+          },
+          "content": "Monthly Portfolio Refresh\\n{{ 4af64680-fd7f-4928-bb87-1f5c2de395b5[\"result\"] }}",
+          "position": "beforeend",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "n8RmnNAL6mZgmwFK"
+          }
+        }
+      }
+    }
+  ],
+  "variables": {
+    "portfolio-narrator": {
+      "id": "portfolio-narrator",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-space-agent-id"
+    },
+    "projects": {
+      "id": "projects",
+      "rank": "k",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}

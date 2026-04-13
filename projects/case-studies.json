@@ -1,0 +1,584 @@
+{
+  "root": {
+    "type": "root",
+    "children": [
+      {
+        "type": "text",
+        "id": "7f6e6608-0f22-4af6-a5b8-8393d30a6f25",
+        "text": {
+          "ops": [
+            {
+              "insert": "Case Studies"
+            },
+            {
+              "insert": "\n",
+              "attributes": {
+                "paragraph": true
+              }
+            }
+          ]
+        },
+        "format": null,
+        "collapsed": false,
+        "completed": false,
+        "children": [
+          {
+            "type": "text",
+            "id": "dd4dcf4f-8bbc-4bf8-b4d1-4f5f7d2a7510",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Nova Commerce: From Bounce to Buy",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cCli1": "Nova Commerce",
+              "@cInd1": {
+                "type": "Select",
+                "optionId": "ecom"
+              },
+              "@cPro1": "High mobile bounce rates and fragmented checkout.",
+              "@cSol1": "Rebuilt product storytelling and streamlined checkout flow.",
+              "@cRes1": "38% conversion lift and 21% higher AOV in 3 months.",
+              "@cYr01": 2025,
+              "@cTag1": "UX, CRO, Brand"
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "81f1227b-eb5f-4a27-b2ea-1472e8ce1a74",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Atlas: Clarifying Complex Workflows",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cCli1": "Atlas",
+              "@cInd1": {
+                "type": "Select",
+                "optionId": "b2b"
+              },
+              "@cPro1": "New users were overwhelmed by setup complexity.",
+              "@cSol1": "Introduced progressive onboarding and role-based dashboards.",
+              "@cRes1": "24% activation lift and 31% fewer support tickets.",
+              "@cYr01": 2026,
+              "@cTag1": "Product Design, Onboarding, Analytics"
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "@cCli1": {
+        "displayName": "Client",
+        "type": "string"
+      },
+      "@cInd1": {
+        "displayName": "Industry",
+        "type": "Select",
+        "options": {
+          "ecom": {
+            "id": "ecom",
+            "name": "E-commerce",
+            "rank": "0",
+            "color": "#3B82F6"
+          },
+          "b2b": {
+            "id": "b2b",
+            "name": "B2B SaaS",
+            "rank": "1",
+            "color": "#8B5CF6"
+          },
+          "health": {
+            "id": "health",
+            "name": "Healthcare",
+            "rank": "2",
+            "color": "#10B981"
+          }
+        }
+      },
+      "@cPro1": {
+        "displayName": "Problem",
+        "type": "string"
+      },
+      "@cSol1": {
+        "displayName": "Solution",
+        "type": "string"
+      },
+      "@cRes1": {
+        "displayName": "Outcome",
+        "type": "string"
+      },
+      "@cYr01": {
+        "displayName": "Year",
+        "type": "number",
+        "render": {
+          "type": "text"
+        },
+        "format": {
+          "type": "decimal"
+        }
+      },
+      "@cTag1": {
+        "displayName": "Tags",
+        "type": "string"
+      }
+    },
+    "views": {
+      "list": {
+        "id": "list",
+        "type": "list",
+        "rank": "A",
+        "displayedFields": {
+          "25ef1606-90ef-482d-a652-fe3a49289abb": {
+            "id": "25ef1606-90ef-482d-a652-fe3a49289abb",
+            "fieldPath": "/attributes/@cCli1",
+            "rank": "V"
+          },
+          "f22c6071-e122-4be2-acf2-7e0aa6d1f5a9": {
+            "id": "f22c6071-e122-4be2-acf2-7e0aa6d1f5a9",
+            "fieldPath": "/attributes/@cInd1",
+            "rank": "k"
+          },
+          "2ad9c70f-e100-48cf-8ce5-e42701d4f591": {
+            "id": "2ad9c70f-e100-48cf-8ce5-e42701d4f591",
+            "fieldPath": "/attributes/@cPro1",
+            "rank": "s"
+          },
+          "118929e0-0e9d-46da-83f9-23437b58d584": {
+            "id": "118929e0-0e9d-46da-83f9-23437b58d584",
+            "fieldPath": "/attributes/@cSol1",
+            "rank": "w"
+          },
+          "1311faa3-116d-4802-8537-868f7ae189f0": {
+            "id": "1311faa3-116d-4802-8537-868f7ae189f0",
+            "fieldPath": "/attributes/@cRes1",
+            "rank": "y"
+          },
+          "5767ead7-c0aa-411a-abb3-436e4ac00207": {
+            "id": "5767ead7-c0aa-411a-abb3-436e4ac00207",
+            "fieldPath": "/attributes/@cYr01",
+            "rank": "z"
+          },
+          "311a8ad9-2545-4951-868a-8526b99295d7": {
+            "id": "311a8ad9-2545-4951-868a-8526b99295d7",
+            "fieldPath": "/attributes/@cTag1",
+            "rank": "zV"
+          }
+        }
+      },
+      "board": {
+        "id": "board",
+        "type": "board",
+        "rank": "B",
+        "displayedFields": {
+          "76f8045e-8f3e-4657-a545-c1d23e74a410": {
+            "id": "76f8045e-8f3e-4657-a545-c1d23e74a410",
+            "fieldPath": "/attributes/@cCli1",
+            "rank": "V"
+          },
+          "77a494b4-4df7-4d2a-addf-0f6d1935a289": {
+            "id": "77a494b4-4df7-4d2a-addf-0f6d1935a289",
+            "fieldPath": "/attributes/@cInd1",
+            "rank": "k"
+          },
+          "0b458740-a83d-40ea-8bfc-23fb65f7bc94": {
+            "id": "0b458740-a83d-40ea-8bfc-23fb65f7bc94",
+            "fieldPath": "/attributes/@cPro1",
+            "rank": "s"
+          },
+          "32362a06-8f24-4c18-8840-051fd7de2061": {
+            "id": "32362a06-8f24-4c18-8840-051fd7de2061",
+            "fieldPath": "/attributes/@cSol1",
+            "rank": "w"
+          },
+          "de34910e-c07b-473d-9d20-e15fe58046c6": {
+            "id": "de34910e-c07b-473d-9d20-e15fe58046c6",
+            "fieldPath": "/attributes/@cRes1",
+            "rank": "y"
+          },
+          "9b824d6d-0ace-4fa1-b753-f39a058038ff": {
+            "id": "9b824d6d-0ace-4fa1-b753-f39a058038ff",
+            "fieldPath": "/attributes/@cYr01",
+            "rank": "z"
+          },
+          "96fd7538-de3c-4c9d-a3cb-88ea498b382e": {
+            "id": "96fd7538-de3c-4c9d-a3cb-88ea498b382e",
+            "fieldPath": "/attributes/@cTag1",
+            "rank": "zV"
+          }
+        }
+      },
+      "actionsheet": {
+        "id": "actionsheet",
+        "type": "actionsheet",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "60dbef94-616c-45e5-92bc-f1fa5b02e43d": {
+            "id": "60dbef94-616c-45e5-92bc-f1fa5b02e43d",
+            "fieldPath": "/attributes/@cCli1",
+            "rank": "z"
+          },
+          "fdee7fa0-331a-4978-a189-83197d88c0cd": {
+            "id": "fdee7fa0-331a-4978-a189-83197d88c0cd",
+            "fieldPath": "/attributes/@cInd1",
+            "rank": "zV"
+          },
+          "de350e96-09cf-4786-8b77-8ea51ca9fc18": {
+            "id": "de350e96-09cf-4786-8b77-8ea51ca9fc18",
+            "fieldPath": "/attributes/@cPro1",
+            "rank": "zk"
+          },
+          "c682aac9-9017-4e89-853f-cd8c706c4567": {
+            "id": "c682aac9-9017-4e89-853f-cd8c706c4567",
+            "fieldPath": "/attributes/@cSol1",
+            "rank": "zs"
+          },
+          "07070925-8f86-457e-a561-ab4124c63747": {
+            "id": "07070925-8f86-457e-a561-ab4124c63747",
+            "fieldPath": "/attributes/@cRes1",
+            "rank": "zw"
+          },
+          "f5728d4b-7390-4708-bad5-46f6231fa299": {
+            "id": "f5728d4b-7390-4708-bad5-46f6231fa299",
+            "fieldPath": "/attributes/@cYr01",
+            "rank": "zy"
+          },
+          "6eb60fa1-87d5-4dc9-82aa-ef77050945c9": {
+            "id": "6eb60fa1-87d5-4dc9-82aa-ef77050945c9",
+            "fieldPath": "/attributes/@cTag1",
+            "rank": "zz"
+          }
+        }
+      },
+      "mindmap": {
+        "id": "mindmap",
+        "type": "mindmap",
+        "rank": "C",
+        "displayedFields": {
+          "e1aa56aa-232d-4139-b5d6-d674d8316517": {
+            "id": "e1aa56aa-232d-4139-b5d6-d674d8316517",
+            "fieldPath": "/attributes/@cCli1",
+            "rank": "V"
+          },
+          "269cae8c-6e00-40a2-abaf-dbd040550107": {
+            "id": "269cae8c-6e00-40a2-abaf-dbd040550107",
+            "fieldPath": "/attributes/@cInd1",
+            "rank": "k"
+          },
+          "87e6f1bd-4599-471c-b345-b6530ac6b657": {
+            "id": "87e6f1bd-4599-471c-b345-b6530ac6b657",
+            "fieldPath": "/attributes/@cPro1",
+            "rank": "s"
+          },
+          "1819efc4-e34c-4ffb-8fb4-cb95f351723c": {
+            "id": "1819efc4-e34c-4ffb-8fb4-cb95f351723c",
+            "fieldPath": "/attributes/@cSol1",
+            "rank": "w"
+          },
+          "734cd6fb-64a3-441d-b84b-1007349e0e19": {
+            "id": "734cd6fb-64a3-441d-b84b-1007349e0e19",
+            "fieldPath": "/attributes/@cRes1",
+            "rank": "y"
+          },
+          "233de9b5-d2d1-4f93-aae6-f43463baa476": {
+            "id": "233de9b5-d2d1-4f93-aae6-f43463baa476",
+            "fieldPath": "/attributes/@cYr01",
+            "rank": "z"
+          },
+          "af544717-1e1e-4dcb-9ca0-33695c103761": {
+            "id": "af544717-1e1e-4dcb-9ca0-33695c103761",
+            "fieldPath": "/attributes/@cTag1",
+            "rank": "zV"
+          }
+        }
+      },
+      "orgchart": {
+        "id": "orgchart",
+        "type": "orgchart",
+        "rank": "D",
+        "displayedFields": {
+          "d2ca7654-8388-4da8-9274-9605cb98227f": {
+            "id": "d2ca7654-8388-4da8-9274-9605cb98227f",
+            "fieldPath": "/attributes/@cCli1",
+            "rank": "V"
+          },
+          "acd0125c-cdde-4b01-a9d9-d9235cc8a209": {
+            "id": "acd0125c-cdde-4b01-a9d9-d9235cc8a209",
+            "fieldPath": "/attributes/@cInd1",
+            "rank": "k"
+          },
+          "eeeb2008-ed77-4ec2-bc22-a24d561ddbb7": {
+            "id": "eeeb2008-ed77-4ec2-bc22-a24d561ddbb7",
+            "fieldPath": "/attributes/@cPro1",
+            "rank": "s"
+          },
+          "9206ddfe-5a97-4e29-98a5-0300cade5402": {
+            "id": "9206ddfe-5a97-4e29-98a5-0300cade5402",
+            "fieldPath": "/attributes/@cSol1",
+            "rank": "w"
+          },
+          "5e8a4f52-769c-4157-b234-1e4b1dc5e21f": {
+            "id": "5e8a4f52-769c-4157-b234-1e4b1dc5e21f",
+            "fieldPath": "/attributes/@cRes1",
+            "rank": "y"
+          },
+          "02233bba-c9ec-4b48-8e50-9c33525d6a15": {
+            "id": "02233bba-c9ec-4b48-8e50-9c33525d6a15",
+            "fieldPath": "/attributes/@cYr01",
+            "rank": "z"
+          },
+          "2121ff36-c03a-46a2-a716-4924d81b1a6d": {
+            "id": "2121ff36-c03a-46a2-a716-4924d81b1a6d",
+            "fieldPath": "/attributes/@cTag1",
+            "rank": "zV"
+          }
+        }
+      },
+      "table": {
+        "id": "table",
+        "type": "table",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "4935afc1-c574-4e92-a387-cf94edfcd54f": {
+            "id": "4935afc1-c574-4e92-a387-cf94edfcd54f",
+            "fieldPath": "/attributes/@cCli1",
+            "rank": "z"
+          },
+          "cc150e7e-56a7-4ca9-b38b-79c59cfe13ea": {
+            "id": "cc150e7e-56a7-4ca9-b38b-79c59cfe13ea",
+            "fieldPath": "/attributes/@cInd1",
+            "rank": "zV"
+          },
+          "3fe1eb86-8a3d-4c5e-9359-c0dfef848352": {
+            "id": "3fe1eb86-8a3d-4c5e-9359-c0dfef848352",
+            "fieldPath": "/attributes/@cPro1",
+            "rank": "zk"
+          },
+          "862c3938-5bde-4bb7-94b1-c2342a368ee7": {
+            "id": "862c3938-5bde-4bb7-94b1-c2342a368ee7",
+            "fieldPath": "/attributes/@cSol1",
+            "rank": "zs"
+          },
+          "b69711bd-87e0-4c62-83a7-c5f81acda36d": {
+            "id": "b69711bd-87e0-4c62-83a7-c5f81acda36d",
+            "fieldPath": "/attributes/@cRes1",
+            "rank": "zw"
+          },
+          "b95f8c14-327c-480a-b9a6-076a30ba30b2": {
+            "id": "b95f8c14-327c-480a-b9a6-076a30ba30b2",
+            "fieldPath": "/attributes/@cYr01",
+            "rank": "zy"
+          },
+          "ea2c65d5-50c4-4077-882f-ffaf372f2200": {
+            "id": "ea2c65d5-50c4-4077-882f-ffaf372f2200",
+            "fieldPath": "/attributes/@cTag1",
+            "rank": "zz"
+          }
+        }
+      }
+    }
+  },
+  "preferences": {
+    "defaultView": "table",
+    "avatar": {
+      "type": "emoji",
+      "value": "📉"
+    }
+  }
+}

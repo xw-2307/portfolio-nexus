@@ -1,0 +1,638 @@
+{
+  "root": {
+    "type": "root",
+    "children": [
+      {
+        "type": "text",
+        "id": "8fbb78f2-70e8-48e7-b60b-f8d4c1c6c6e6",
+        "text": {
+          "ops": [
+            {
+              "insert": "Projects"
+            },
+            {
+              "insert": "\n",
+              "attributes": {
+                "paragraph": true
+              }
+            }
+          ]
+        },
+        "format": null,
+        "collapsed": false,
+        "completed": false,
+        "children": [
+          {
+            "type": "text",
+            "id": "e665bf5f-9a79-4589-83be-76816e2b1e01",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Nova Commerce Rebrand",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@pTyp1": {
+                "type": "Select",
+                "optionId": "web"
+              },
+              "@pSta1": {
+                "type": "Select",
+                "optionId": "live"
+              },
+              "@pTec1": "React, Tailwind, Framer Motion",
+              "@pUrl1": "https://novacommerce.example",
+              "@pImp1": "Conversion up 38% in 90 days",
+              "@pFea1": {
+                "type": "Select",
+                "optionId": "yes"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "f47f9e87-7d95-4cc8-83fb-5946f19d25f2",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Atlas Workflow Suite",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@pTyp1": {
+                "type": "Select",
+                "optionId": "saas"
+              },
+              "@pSta1": {
+                "type": "Select",
+                "optionId": "live"
+              },
+              "@pTec1": "React, Node.js, Postgres",
+              "@pUrl1": "https://atlasworkflow.example",
+              "@pImp1": "Activation rate up 24%",
+              "@pFea1": {
+                "type": "Select",
+                "optionId": "yes"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "25c691b9-3c22-4ddf-8272-661313b87a22",
+            "text": {
+              "ops": [
+                {
+                  "insert": "🔔 New inquiry: Johnny ("
+                },
+                {
+                  "insert": "jo@test.com",
+                  "attributes": {
+                    "link": "mailto:jo@test.com"
+                  }
+                },
+                {
+                  "insert": ")"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@pTyp1": {
+                "type": "Select",
+                "optionId": "web"
+              },
+              "@pSta1": {
+                "type": "Select",
+                "optionId": "draft"
+              },
+              "@pTec1": "Lead notification",
+              "@pUrl1": "N/A",
+              "@pImp1": "Inquiry from Johnny needs follow-up",
+              "@pFea1": {
+                "type": "Select",
+                "optionId": "no"
+              }
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "@pTyp1": {
+        "displayName": "Type",
+        "type": "Select",
+        "options": {
+          "web": {
+            "id": "web",
+            "name": "Website",
+            "rank": "0",
+            "color": "#3B82F6"
+          },
+          "saas": {
+            "id": "saas",
+            "name": "SaaS",
+            "rank": "1",
+            "color": "#8B5CF6"
+          },
+          "mobile": {
+            "id": "mobile",
+            "name": "Mobile App",
+            "rank": "2",
+            "color": "#10B981"
+          }
+        }
+      },
+      "@pSta1": {
+        "displayName": "Status",
+        "type": "Select",
+        "options": {
+          "draft": {
+            "id": "draft",
+            "name": "Draft",
+            "rank": "0",
+            "color": "#F59E0B"
+          },
+          "live": {
+            "id": "live",
+            "name": "Live",
+            "rank": "1",
+            "color": "#22C55E"
+          },
+          "arch": {
+            "id": "arch",
+            "name": "Archived",
+            "rank": "2",
+            "color": "#94A3B8"
+          }
+        }
+      },
+      "@pTec1": {
+        "displayName": "Tech Stack",
+        "type": "string"
+      },
+      "@pUrl1": {
+        "displayName": "Live URL",
+        "type": "string"
+      },
+      "@pImp1": {
+        "displayName": "Impact",
+        "type": "string"
+      },
+      "@pFea1": {
+        "displayName": "Featured",
+        "type": "Select",
+        "options": {
+          "yes": {
+            "id": "yes",
+            "name": "Yes",
+            "rank": "0",
+            "color": "#22C55E"
+          },
+          "no": {
+            "id": "no",
+            "name": "No",
+            "rank": "1",
+            "color": "#6B7280"
+          }
+        }
+      }
+    },
+    "views": {
+      "list": {
+        "id": "list",
+        "type": "list",
+        "rank": "A",
+        "displayedFields": {
+          "6d917e7a-3954-4fea-abfc-4396947cfb16": {
+            "id": "6d917e7a-3954-4fea-abfc-4396947cfb16",
+            "fieldPath": "/attributes/@pTyp1",
+            "rank": "V"
+          },
+          "a4e83a45-aa23-450d-bf09-fa25843bb36d": {
+            "id": "a4e83a45-aa23-450d-bf09-fa25843bb36d",
+            "fieldPath": "/attributes/@pSta1",
+            "rank": "k"
+          },
+          "eb2d44c2-132c-40bd-af1f-3613c23e7e9d": {
+            "id": "eb2d44c2-132c-40bd-af1f-3613c23e7e9d",
+            "fieldPath": "/attributes/@pTec1",
+            "rank": "s"
+          },
+          "448d4e5c-1f42-470c-ab24-34ede5c4c04c": {
+            "id": "448d4e5c-1f42-470c-ab24-34ede5c4c04c",
+            "fieldPath": "/attributes/@pUrl1",
+            "rank": "w"
+          },
+          "f938d9ac-5c76-4d1d-a21f-b9245c6637f4": {
+            "id": "f938d9ac-5c76-4d1d-a21f-b9245c6637f4",
+            "fieldPath": "/attributes/@pImp1",
+            "rank": "y"
+          },
+          "809d19b4-740d-4d5f-80ef-4c62098c3baf": {
+            "id": "809d19b4-740d-4d5f-80ef-4c62098c3baf",
+            "fieldPath": "/attributes/@pFea1",
+            "rank": "z"
+          }
+        }
+      },
+      "board": {
+        "id": "board",
+        "type": "board",
+        "rank": "B",
+        "displayedFields": {
+          "8fcf330c-2616-4226-a6df-39ac2ad25a20": {
+            "id": "8fcf330c-2616-4226-a6df-39ac2ad25a20",
+            "fieldPath": "/attributes/@pTyp1",
+            "rank": "V"
+          },
+          "3484f56c-162e-429d-bc68-94c747c32f64": {
+            "id": "3484f56c-162e-429d-bc68-94c747c32f64",
+            "fieldPath": "/attributes/@pSta1",
+            "rank": "k"
+          },
+          "1d468630-7457-4761-b9f6-260a5fd5849d": {
+            "id": "1d468630-7457-4761-b9f6-260a5fd5849d",
+            "fieldPath": "/attributes/@pTec1",
+            "rank": "s"
+          },
+          "4f163ca7-be94-4d67-9d0f-fd35c99e3d0e": {
+            "id": "4f163ca7-be94-4d67-9d0f-fd35c99e3d0e",
+            "fieldPath": "/attributes/@pUrl1",
+            "rank": "w"
+          },
+          "9009af77-67bd-4bc5-ac15-8a1d28ff53e3": {
+            "id": "9009af77-67bd-4bc5-ac15-8a1d28ff53e3",
+            "fieldPath": "/attributes/@pImp1",
+            "rank": "y"
+          },
+          "e2fb7135-6c9a-45bb-8996-f0859003f5bf": {
+            "id": "e2fb7135-6c9a-45bb-8996-f0859003f5bf",
+            "fieldPath": "/attributes/@pFea1",
+            "rank": "z"
+          }
+        }
+      },
+      "actionsheet": {
+        "id": "actionsheet",
+        "type": "actionsheet",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "7cdbe306-ff91-416c-80c9-57a1ee7817b2": {
+            "id": "7cdbe306-ff91-416c-80c9-57a1ee7817b2",
+            "fieldPath": "/attributes/@pTyp1",
+            "rank": "z"
+          },
+          "c9660af1-4c28-457d-9324-6b874129e7ab": {
+            "id": "c9660af1-4c28-457d-9324-6b874129e7ab",
+            "fieldPath": "/attributes/@pSta1",
+            "rank": "zV"
+          },
+          "6b9c7126-d9b2-466d-84a2-6e864415e00f": {
+            "id": "6b9c7126-d9b2-466d-84a2-6e864415e00f",
+            "fieldPath": "/attributes/@pTec1",
+            "rank": "zk"
+          },
+          "143f2c2c-49eb-4909-bac5-f75345227af6": {
+            "id": "143f2c2c-49eb-4909-bac5-f75345227af6",
+            "fieldPath": "/attributes/@pUrl1",
+            "rank": "zs"
+          },
+          "f6def450-5a90-4484-862d-6b8c4f88dd0b": {
+            "id": "f6def450-5a90-4484-862d-6b8c4f88dd0b",
+            "fieldPath": "/attributes/@pImp1",
+            "rank": "zw"
+          },
+          "7ace63fc-6007-48bd-98e9-9e793cd67213": {
+            "id": "7ace63fc-6007-48bd-98e9-9e793cd67213",
+            "fieldPath": "/attributes/@pFea1",
+            "rank": "zy"
+          }
+        }
+      },
+      "mindmap": {
+        "id": "mindmap",
+        "type": "mindmap",
+        "rank": "C",
+        "displayedFields": {
+          "f7115352-ba79-404e-a94a-634e856b00ca": {
+            "id": "f7115352-ba79-404e-a94a-634e856b00ca",
+            "fieldPath": "/attributes/@pTyp1",
+            "rank": "V"
+          },
+          "e06ac727-09c3-45c7-b5ec-a06c7fd2b5ae": {
+            "id": "e06ac727-09c3-45c7-b5ec-a06c7fd2b5ae",
+            "fieldPath": "/attributes/@pSta1",
+            "rank": "k"
+          },
+          "ee48f1a6-ef7a-4ebd-b050-a499b74f5b70": {
+            "id": "ee48f1a6-ef7a-4ebd-b050-a499b74f5b70",
+            "fieldPath": "/attributes/@pTec1",
+            "rank": "s"
+          },
+          "e4848189-3eb5-4ada-a2f0-a5c5cf1d5fd3": {
+            "id": "e4848189-3eb5-4ada-a2f0-a5c5cf1d5fd3",
+            "fieldPath": "/attributes/@pUrl1",
+            "rank": "w"
+          },
+          "132173eb-efbf-4f90-b23d-dd77e32058ef": {
+            "id": "132173eb-efbf-4f90-b23d-dd77e32058ef",
+            "fieldPath": "/attributes/@pImp1",
+            "rank": "y"
+          },
+          "24a5c253-1626-47ba-90b3-35d602b4a71a": {
+            "id": "24a5c253-1626-47ba-90b3-35d602b4a71a",
+            "fieldPath": "/attributes/@pFea1",
+            "rank": "z"
+          }
+        }
+      },
+      "orgchart": {
+        "id": "orgchart",
+        "type": "orgchart",
+        "rank": "D",
+        "displayedFields": {
+          "87331707-31d3-405a-86c7-023100f700c1": {
+            "id": "87331707-31d3-405a-86c7-023100f700c1",
+            "fieldPath": "/attributes/@pTyp1",
+            "rank": "V"
+          },
+          "f417853c-9dd2-4fab-9845-74d2ad169ae0": {
+            "id": "f417853c-9dd2-4fab-9845-74d2ad169ae0",
+            "fieldPath": "/attributes/@pSta1",
+            "rank": "k"
+          },
+          "4fcd3bc8-6cdb-43e2-8cc1-cdb2479f8f42": {
+            "id": "4fcd3bc8-6cdb-43e2-8cc1-cdb2479f8f42",
+            "fieldPath": "/attributes/@pTec1",
+            "rank": "s"
+          },
+          "108b1efa-3972-4231-bf62-309ad71097b6": {
+            "id": "108b1efa-3972-4231-bf62-309ad71097b6",
+            "fieldPath": "/attributes/@pUrl1",
+            "rank": "w"
+          },
+          "fa84aadb-0355-4b96-afef-4d7d0b86918f": {
+            "id": "fa84aadb-0355-4b96-afef-4d7d0b86918f",
+            "fieldPath": "/attributes/@pImp1",
+            "rank": "y"
+          },
+          "fd88bc24-42f5-40d5-ae26-880cb6bc0730": {
+            "id": "fd88bc24-42f5-40d5-ae26-880cb6bc0730",
+            "fieldPath": "/attributes/@pFea1",
+            "rank": "z"
+          }
+        }
+      },
+      "table": {
+        "id": "table",
+        "type": "table",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "dc75781f-54cc-4cf0-bde1-49397306981e": {
+            "id": "dc75781f-54cc-4cf0-bde1-49397306981e",
+            "fieldPath": "/attributes/@pTyp1",
+            "rank": "z"
+          },
+          "3620077c-229c-4c25-b882-c320a224e5a2": {
+            "id": "3620077c-229c-4c25-b882-c320a224e5a2",
+            "fieldPath": "/attributes/@pSta1",
+            "rank": "zV"
+          },
+          "c1081fa0-e4ab-430e-b819-79f4b978fdb5": {
+            "id": "c1081fa0-e4ab-430e-b819-79f4b978fdb5",
+            "fieldPath": "/attributes/@pTec1",
+            "rank": "zk"
+          },
+          "71dde41d-d80c-43b9-b386-7b2cc31d6092": {
+            "id": "71dde41d-d80c-43b9-b386-7b2cc31d6092",
+            "fieldPath": "/attributes/@pUrl1",
+            "rank": "zs"
+          },
+          "000d02dd-6138-4bf6-bcfc-391ac552c926": {
+            "id": "000d02dd-6138-4bf6-bcfc-391ac552c926",
+            "fieldPath": "/attributes/@pImp1",
+            "rank": "zw"
+          },
+          "19f95c9c-42be-499b-bcab-cc5f07e486db": {
+            "id": "19f95c9c-42be-499b-bcab-cc5f07e486db",
+            "fieldPath": "/attributes/@pFea1",
+            "rank": "zy"
+          }
+        }
+      }
+    }
+  },
+  "preferences": {
+    "defaultView": "table",
+    "avatar": {
+      "type": "emoji",
+      "value": "📘"
+    }
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "root": {
+    "type": "root",
+    "children": [
+      {
+        "type": "text",
+        "id": "a93027ad-5adf-47cc-ad79-7669eeb8bd3b",
+        "text": {
+          "ops": [
+            {
+              "insert": "Testimonials"
+            },
+            {
+              "insert": "\n",
+              "attributes": {
+                "paragraph": true
+              }
+            }
+          ]
+        },
+        "format": null,
+        "collapsed": false,
+        "completed": false,
+        "children": [
+          {
+            "type": "text",
+            "id": "a1239ce5-7cb0-4348-bec1-007fe8b1ca37",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Maya Chen testimonial",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@tNam1": "Maya Chen",
+              "@tRol1": "Head of Growth",
+              "@tCom1": "Harbor Labs",
+              "@tRat1": 5,
+              "@tFea1": {
+                "type": "Select",
+                "optionId": "featured"
+              },
+              "@tQte1": "The redesign helped us communicate value in seconds. Demo requests doubled."
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "bc17377f-3f58-4b77-99b6-8061304f7a9a",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Jordan Blake testimonial",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@tNam1": "Jordan Blake",
+              "@tRol1": "Founder",
+              "@tCom1": "Northline Studio",
+              "@tRat1": 5,
+              "@tFea1": {
+                "type": "Select",
+                "optionId": "featured"
+              },
+              "@tQte1": "Every case study became a sales asset. We closed enterprise clients faster."
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "@tNam1": {
+        "displayName": "Client Name",
+        "type": "string"
+      },
+      "@tRol1": {
+        "displayName": "Role",
+        "type": "string"
+      },
+      "@tCom1": {
+        "displayName": "Company",
+        "type": "string"
+      },
+      "@tRat1": {
+        "displayName": "Rating",
+        "type": "number",
+        "render": {
+          "type": "text"
+        },
+        "format": {
+          "type": "decimal"
+        }
+      },
+      "@tFea1": {
+        "displayName": "Featured",
+        "type": "Select",
+        "options": {
+          "featured": {
+            "id": "featured",
+            "name": "Featured",
+            "rank": "0",
+            "color": "#22C55E"
+          },
+          "standard": {
+            "id": "standard",
+            "name": "Standard",
+            "rank": "1",
+            "color": "#64748B"
+          }
+        }
+      },
+      "@tQte1": {
+        "displayName": "Quote",
+        "type": "string"
+      }
+    },
+    "views": {
+      "list": {
+        "id": "list",
+        "type": "list",
+        "rank": "A",
+        "displayedFields": {
+          "fdd00606-b8a0-4d00-a43b-cd650ca677dd": {
+            "id": "fdd00606-b8a0-4d00-a43b-cd650ca677dd",
+            "fieldPath": "/attributes/@tNam1",
+            "rank": "V"
+          },
+          "988957fc-0903-4a49-af62-f327e59b6ec9": {
+            "id": "988957fc-0903-4a49-af62-f327e59b6ec9",
+            "fieldPath": "/attributes/@tRol1",
+            "rank": "k"
+          },
+          "f0c2fa7e-e74d-4807-bcd4-82d7a8eb587d": {
+            "id": "f0c2fa7e-e74d-4807-bcd4-82d7a8eb587d",
+            "fieldPath": "/attributes/@tCom1",
+            "rank": "s"
+          },
+          "835aaa2b-645e-4dd1-abea-845ad9f78fc8": {
+            "id": "835aaa2b-645e-4dd1-abea-845ad9f78fc8",
+            "fieldPath": "/attributes/@tRat1",
+            "rank": "w"
+          },
+          "f7366764-1e9c-431f-8aaa-e7ffbef24d84": {
+            "id": "f7366764-1e9c-431f-8aaa-e7ffbef24d84",
+            "fieldPath": "/attributes/@tFea1",
+            "rank": "y"
+          },
+          "99361249-96c0-4a7e-b22d-3339ee69a582": {
+            "id": "99361249-96c0-4a7e-b22d-3339ee69a582",
+            "fieldPath": "/attributes/@tQte1",
+            "rank": "z"
+          }
+        }
+      },
+      "board": {
+        "id": "board",
+        "type": "board",
+        "rank": "B",
+        "displayedFields": {
+          "f7ee37ac-17b2-4cf4-a5da-dd5c03e15cae": {
+            "id": "f7ee37ac-17b2-4cf4-a5da-dd5c03e15cae",
+            "fieldPath": "/attributes/@tNam1",
+            "rank": "V"
+          },
+          "288f21d5-c2c9-41ac-8d07-b60ac460fe08": {
+            "id": "288f21d5-c2c9-41ac-8d07-b60ac460fe08",
+            "fieldPath": "/attributes/@tRol1",
+            "rank": "k"
+          },
+          "8e498f8b-2192-46cb-b4fc-aab27ded18ad": {
+            "id": "8e498f8b-2192-46cb-b4fc-aab27ded18ad",
+            "fieldPath": "/attributes/@tCom1",
+            "rank": "s"
+          },
+          "d92539b8-88e0-4e82-badc-087454839597": {
+            "id": "d92539b8-88e0-4e82-badc-087454839597",
+            "fieldPath": "/attributes/@tRat1",
+            "rank": "w"
+          },
+          "c68eebff-2f65-4e39-b762-ef185aea89ba": {
+            "id": "c68eebff-2f65-4e39-b762-ef185aea89ba",
+            "fieldPath": "/attributes/@tFea1",
+            "rank": "y"
+          },
+          "a76e1dfa-415a-4e98-919a-edfa0a17f5ea": {
+            "id": "a76e1dfa-415a-4e98-919a-edfa0a17f5ea",
+            "fieldPath": "/attributes/@tQte1",
+            "rank": "z"
+          }
+        }
+      },
+      "actionsheet": {
+        "id": "actionsheet",
+        "type": "actionsheet",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "b5520fdc-791b-4f29-a2f9-7a98ba875309": {
+            "id": "b5520fdc-791b-4f29-a2f9-7a98ba875309",
+            "fieldPath": "/attributes/@tNam1",
+            "rank": "z"
+          },
+          "6042a4ed-bb04-4872-aee6-1519cd95211d": {
+            "id": "6042a4ed-bb04-4872-aee6-1519cd95211d",
+            "fieldPath": "/attributes/@tRol1",
+            "rank": "zV"
+          },
+          "aa48474e-46ac-4f20-9709-bd03eaf8d122": {
+            "id": "aa48474e-46ac-4f20-9709-bd03eaf8d122",
+            "fieldPath": "/attributes/@tCom1",
+            "rank": "zk"
+          },
+          "5a4b912f-9f59-4379-9697-35bedca71667": {
+            "id": "5a4b912f-9f59-4379-9697-35bedca71667",
+            "fieldPath": "/attributes/@tRat1",
+            "rank": "zs"
+          },
+          "cbec7385-4fb9-45e8-b59a-086eb8cad85c": {
+            "id": "cbec7385-4fb9-45e8-b59a-086eb8cad85c",
+            "fieldPath": "/attributes/@tFea1",
+            "rank": "zw"
+          },
+          "20a3ce1c-df8c-4382-9214-cccf0b29e23e": {
+            "id": "20a3ce1c-df8c-4382-9214-cccf0b29e23e",
+            "fieldPath": "/attributes/@tQte1",
+            "rank": "zy"
+          }
+        }
+      },
+      "mindmap": {
+        "id": "mindmap",
+        "type": "mindmap",
+        "rank": "C",
+        "displayedFields": {
+          "83166e1f-e4d3-4d88-b387-c378b4479a6d": {
+            "id": "83166e1f-e4d3-4d88-b387-c378b4479a6d",
+            "fieldPath": "/attributes/@tNam1",
+            "rank": "V"
+          },
+          "52ba31a1-c361-46f3-8555-e6f7202a2020": {
+            "id": "52ba31a1-c361-46f3-8555-e6f7202a2020",
+            "fieldPath": "/attributes/@tRol1",
+            "rank": "k"
+          },
+          "a9fb3c40-fc46-4f4e-8c47-70f14c013964": {
+            "id": "a9fb3c40-fc46-4f4e-8c47-70f14c013964",
+            "fieldPath": "/attributes/@tCom1",
+            "rank": "s"
+          },
+          "a6881299-249e-4e62-9fb9-f08af651ef41": {
+            "id": "a6881299-249e-4e62-9fb9-f08af651ef41",
+            "fieldPath": "/attributes/@tRat1",
+            "rank": "w"
+          },
+          "aae3b562-24d0-4810-81aa-654e57fde22c": {
+            "id": "aae3b562-24d0-4810-81aa-654e57fde22c",
+            "fieldPath": "/attributes/@tFea1",
+            "rank": "y"
+          },
+          "9294270a-d3bc-4334-978d-9df9074afbea": {
+            "id": "9294270a-d3bc-4334-978d-9df9074afbea",
+            "fieldPath": "/attributes/@tQte1",
+            "rank": "z"
+          }
+        }
+      },
+      "orgchart": {
+        "id": "orgchart",
+        "type": "orgchart",
+        "rank": "D",
+        "displayedFields": {
+          "4e855865-2511-4a00-a27f-dfe83b1ad44c": {
+            "id": "4e855865-2511-4a00-a27f-dfe83b1ad44c",
+            "fieldPath": "/attributes/@tNam1",
+            "rank": "V"
+          },
+          "c5d91d8e-29c9-45c1-8f4c-a1fbb288370d": {
+            "id": "c5d91d8e-29c9-45c1-8f4c-a1fbb288370d",
+            "fieldPath": "/attributes/@tRol1",
+            "rank": "k"
+          },
+          "d7191e60-00f4-4b23-ba80-3d174ca156f1": {
+            "id": "d7191e60-00f4-4b23-ba80-3d174ca156f1",
+            "fieldPath": "/attributes/@tCom1",
+            "rank": "s"
+          },
+          "21bfb406-461b-4086-9aa3-05810d1a989b": {
+            "id": "21bfb406-461b-4086-9aa3-05810d1a989b",
+            "fieldPath": "/attributes/@tRat1",
+            "rank": "w"
+          },
+          "32a2377a-c652-4c8a-b06a-d9f251e7b16b": {
+            "id": "32a2377a-c652-4c8a-b06a-d9f251e7b16b",
+            "fieldPath": "/attributes/@tFea1",
+            "rank": "y"
+          },
+          "323ded6e-4af9-40e7-9172-8496cfc00e32": {
+            "id": "323ded6e-4af9-40e7-9172-8496cfc00e32",
+            "fieldPath": "/attributes/@tQte1",
+            "rank": "z"
+          }
+        }
+      },
+      "table": {
+        "id": "table",
+        "type": "table",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "f08be173-d36b-4176-a649-43fc03a10e57": {
+            "id": "f08be173-d36b-4176-a649-43fc03a10e57",
+            "fieldPath": "/attributes/@tNam1",
+            "rank": "z"
+          },
+          "7cc1f483-d1ee-47a8-a0e2-1f64c64f0674": {
+            "id": "7cc1f483-d1ee-47a8-a0e2-1f64c64f0674",
+            "fieldPath": "/attributes/@tRol1",
+            "rank": "zV"
+          },
+          "4370a1a7-aeae-479d-8514-ae53a027c995": {
+            "id": "4370a1a7-aeae-479d-8514-ae53a027c995",
+            "fieldPath": "/attributes/@tCom1",
+            "rank": "zk"
+          },
+          "12bc07fb-7dc7-45e0-b572-9764b50f9d17": {
+            "id": "12bc07fb-7dc7-45e0-b572-9764b50f9d17",
+            "fieldPath": "/attributes/@tRat1",
+            "rank": "zs"
+          },
+          "03cb2bb6-a6bb-4d34-9695-5b48244c1c2c": {
+            "id": "03cb2bb6-a6bb-4d34-9695-5b48244c1c2c",
+            "fieldPath": "/attributes/@tFea1",
+            "rank": "zw"
+          },
+          "8d81087d-b994-43c7-bf76-66f825c71397": {
+            "id": "8d81087d-b994-43c7-bf76-66f825c71397",
+            "fieldPath": "/attributes/@tQte1",
+            "rank": "zy"
+          }
+        }
+      }
+    }
+  },
+  "preferences": {
+    "defaultView": "table",
+    "avatar": {
+      "type": "emoji",
+      "value": "💡"
+    }
+  }
+}

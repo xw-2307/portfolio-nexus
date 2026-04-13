@@ -1,0 +1,226 @@
+{
+  "version": "2",
+  "flowTitle": "Portfolio Inquiry Intake",
+  "trigger": {
+    "type": "FORM",
+    "displayName": "Inquiry Form Submitted",
+    "settings": {
+      "description": "",
+      "inputs": [
+        {
+          "id": "name",
+          "title": "Name",
+          "description": "Your full name",
+          "type": "short_text"
+        },
+        {
+          "id": "email",
+          "title": "Email",
+          "description": "Best email to reach you",
+          "type": "short_text",
+          "format": {
+            "type": "email"
+          }
+        },
+        {
+          "id": "company",
+          "title": "Company",
+          "description": "Company or organization",
+          "type": "short_text"
+        },
+        {
+          "id": "projectType",
+          "title": "Project Type",
+          "description": "What do you need help with?",
+          "type": "static_dropdown",
+          "options": [
+            {
+              "id": "web-redesign",
+              "type": "text",
+              "value": "web-redesign"
+            },
+            {
+              "id": "product-design",
+              "type": "text",
+              "value": "product-design"
+            },
+            {
+              "id": "retainer",
+              "type": "text",
+              "value": "retainer"
+            }
+          ]
+        },
+        {
+          "id": "budget",
+          "title": "Budget",
+          "description": "Budget range",
+          "type": "short_text"
+        },
+        {
+          "id": "message",
+          "title": "Project Brief",
+          "description": "Tell us your goals",
+          "type": "long_text"
+        }
+      ],
+      "isEndPageEnabled": false
+    }
+  },
+  "actions": [
+    {
+      "name": "313d23fd-0724-4678-9703-4f7f90eb4f17",
+      "valid": false,
+      "displayName": "Create Lead",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "1.0.0",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@iBud1": {
+              "data": {
+                "value": "{{ trigger[\"budget\"] }}"
+              },
+              "rank": "4",
+              "fieldId": "@iBud1"
+            },
+            "@iCmp1": {
+              "data": {
+                "value": "{{ trigger[\"company\"] }}"
+              },
+              "rank": "2",
+              "fieldId": "@iCmp1"
+            },
+            "@iEml1": {
+              "data": {
+                "value": "{{ trigger[\"email\"] }}"
+              },
+              "rank": "1",
+              "fieldId": "@iEml1"
+            },
+            "@iMsg1": {
+              "data": {
+                "value": "{{ trigger[\"message\"] }}"
+              },
+              "rank": "6",
+              "fieldId": "@iMsg1"
+            },
+            "@iNam1": {
+              "data": {
+                "value": "{{ trigger[\"name\"] }}"
+              },
+              "rank": "0",
+              "fieldId": "@iNam1"
+            },
+            "@iSrc1": {
+              "data": {
+                "value": "website"
+              },
+              "rank": "7",
+              "fieldId": "@iSrc1"
+            },
+            "@iSta1": {
+              "data": {
+                "value": "new"
+              },
+              "rank": "5",
+              "fieldId": "@iSta1"
+            },
+            "@iTyp1": {
+              "data": {
+                "value": "{{ trigger[\"projectType\"] }}"
+              },
+              "rank": "3",
+              "fieldId": "@iTyp1"
+            }
+          },
+          "content": "New inquiry from {{ trigger[\"name\"] }} — {{ trigger[\"company\"] }}",
+          "position": "beforeend",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "ifEU3sPq4KdnvfKT"
+          }
+        }
+      }
+    },
+    {
+      "name": "fab807e8-c40c-4d29-9670-b996e3fdf89a",
+      "valid": false,
+      "displayName": "Notify Portfolio Owner",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "1.0.0",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@pFea1": {
+              "data": {
+                "value": "no"
+              },
+              "rank": "5",
+              "fieldId": "@pFea1"
+            },
+            "@pImp1": {
+              "data": {
+                "value": "Inquiry from {{ trigger[\"name\"] }} needs follow-up"
+              },
+              "rank": "4",
+              "fieldId": "@pImp1"
+            },
+            "@pSta1": {
+              "data": {
+                "value": "draft"
+              },
+              "rank": "1",
+              "fieldId": "@pSta1"
+            },
+            "@pTec1": {
+              "data": {
+                "value": "Lead notification"
+              },
+              "rank": "2",
+              "fieldId": "@pTec1"
+            },
+            "@pTyp1": {
+              "data": {
+                "value": "web"
+              },
+              "rank": "0",
+              "fieldId": "@pTyp1"
+            },
+            "@pUrl1": {
+              "data": {
+                "value": "N/A"
+              },
+              "rank": "3",
+              "fieldId": "@pUrl1"
+            }
+          },
+          "content": "🔔 New inquiry: {{ trigger[\"name\"] }} ({{ trigger[\"email\"] }})",
+          "position": "beforeend",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "n8RmnNAL6mZgmwFK"
+          }
+        }
+      }
+    }
+  ],
+  "variables": {
+    "inquiries": {
+      "id": "inquiries",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-project-id"
+    },
+    "projects": {
+      "id": "projects",
+      "rank": "k",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}
