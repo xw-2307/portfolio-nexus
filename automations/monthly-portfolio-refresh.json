@@ -103,8 +103,8 @@
       "type": "string",
       "format": "taskade-space-agent-id"
     },
-    "projects": {
-      "id": "projects",
+    "n8RmnNAL6mZgmwFK": {
+      "id": "n8RmnNAL6mZgmwFK",
       "rank": "k",
       "type": "string",
       "format": "taskade-project-id"
